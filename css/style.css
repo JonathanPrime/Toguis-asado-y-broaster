@@ -1325,6 +1325,28 @@ input.whats-input[type=text]:focus {
   margin-top: 1rem;
 }
 
+.loader-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.loader-container img{
+  height: 150px;
+  width: auto;
+}
+
+.loader-container.fade-out {
+  top: -120%;
+}
+
 
 @media (max-width: 2500px) {
   /* logo {

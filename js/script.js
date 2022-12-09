@@ -639,6 +639,15 @@ window.onload=function () {
   shoppingCart.clearCart();
   carritoEnTexto = "";
   displayCart();
+  fadeOut();
+}
+
+function fadeOut() {
+  setInterval(loader, 3000);
+}
+
+function loader() {
+  document.querySelector('.loader-container').classList.add('fade-out');
 }
 
 /* sendOrder(); */
