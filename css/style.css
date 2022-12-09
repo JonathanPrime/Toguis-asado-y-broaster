@@ -1,33 +1,34 @@
 @font-face {
   font-family: 'Poppins-Regular';
   /*a name to be used later*/
-  src: url('../fonts/poppins-regular.ttf');
+  src: url('../fonts/Poppins-regular.ttf');
   /*URL to font*/
 }
 
 @font-face {
-  font-family: 'Bebas-Neue-Pro-Bold';
+  font-family: 'Poppins-Bold';
   /*a name to be used later*/
-  src: url('../fonts/Bebas-Neue-Pro-Bold.otf');
+  src: url('../fonts/Poppins-Bold.ttf');
   /*URL to font*/
 }
 
 
 @font-face {
-  font-family: 'Blackmatte';
+  font-family: 'TheNautiGal';
   /*a name to be used later*/
-  src: url('../fonts/Blackmatte.otf');
+  src: url('../fonts/TheNautiGal-rob.ttf');
   /*URL to font*/
 }
 
 
 :root {
-  --black: #161616;
+  --black: #181415;
   --white: #FFFFFF;
   --gray: #aaa;
   --animation-curve: cubic-bezier(0.05, 0.07, 0.052, 0.052);
-  --palet-1: #E30713;
-  --palet-2: #FCED00;
+  --palet-1: #FF0000;
+  --palet-2: #FFC100;
+  --palet-3: #FF7400;
 }
 
 * {
@@ -62,18 +63,18 @@ section {
 
 .heading .title-menu {
   text-align: center;
-  font-family: 'Blackmatte';
-  font-size: 8rem;
+  font-family: 'TheNautiGal';
+  font-size: 11rem;
   margin-top: -4rem;
-  color: var(--black);
+  color: var(--white);
 }
 
 .heading .sub-menu {
   text-align: center;
-  font-family: 'Bebas-Neue-Pro-Bold';
+  font-family: 'Poppins-Bold';
   text-transform: uppercase;
   font-size: 5.8rem;
-  color: var(--palet-1);
+  color: var(--palet-2);
 }
 
 p {
@@ -152,7 +153,7 @@ img {
 }
 
 .logo-desing {
-  width: 15%;
+  width: 5%;
   height: auto;
 }
 
@@ -161,9 +162,9 @@ img {
 }
 
 .header .nav a {
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
-  font-family: 'Bebas-Neue-Pro-Bold';
+  font-family: 'Poppins-Bold';
   margin-left: 2rem;
   color: var(--black);
 }
@@ -218,7 +219,7 @@ img {
   align-items: center;
   gap: 2rem;
   z-index: 1;
-  background: url(../images/banner.jpg) no-repeat;
+  background: url(../images/banner.png) no-repeat;
   background-size: cover;
   background-position: center;
   justify-items: center;
@@ -275,12 +276,12 @@ img {
   line-height: 2;
   color: var(--white);
   padding: 2rem 0;
-  font-family: 'Blackmatte' !important;
+  font-family: 'TheNautiGal' !important;
 }
 
 .service {
   background: var(--palet-2) url(../images/vectores/patron-2.svg) repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   padding: 2rem 9% !important;
 }
@@ -313,7 +314,7 @@ img {
   padding: 1rem 0;
   font-size: 4rem;
   color: var(--black);
-  font-family: 'Bebas-Neue-Pro-Bold';
+  font-family: 'Poppins-Bold';
 }
 
 .service-box .box .sub-services {
@@ -321,7 +322,7 @@ img {
   margin-top: -4rem;
   font-size: 5rem;
   color: var(--palet-1);
-  font-family: 'Blackmatte';
+  font-family: 'TheNautiGal';
 }
 
 .service-box .box p {
@@ -334,7 +335,7 @@ img {
 /*========== MENU ==========*/
 
 .menu {
-  background: var(--white) url(../images/vectores/patron-1.svg) repeat;
+  background: #181415f2 url(../images/vectores/patron-1.svg) repeat;
   background-size: contain;
   background-position: center;
   padding: 2rem 9% !important;
@@ -355,14 +356,14 @@ img {
   display: flex;
   opacity: 1 !important;
   flex-direction: column;
-  background: url(../images/vectores/back-footer.svg) no-repeat, linear-gradient(45deg, rgba(218, 12, 49, 1) 0%, rgba(250, 180, 22, 1) 100%) !important;
-  background-size: cover !important;
+  background: url(../images/vectores/back-footer.svg) no-repeat, linear-gradient(171deg, rgba(255, 193, 0, 1) 0%, rgba(255, 116, 0, 1) 26%, rgba(255, 116, 0, 1) 107%) !important;
+  background-size: contain !important;
   background-position-y: center !important;
   background-position-x: center !important;
   border-radius: 2rem;
-  -webkit-box-shadow: 0px 16px 34px -3px rgba(48, 48, 48, 0.9);
-  -moz-box-shadow: 0px 16px 34px -3px rgba(48, 48, 48, 0.9);
-  box-shadow: 0px 16px 34px -3px rgba(48, 48, 48, 0.9);
+  -webkit-box-shadow: 0px 16px 34px -3px rgb(175 175 175 / 0.5);
+  -moz-box-shadow: 0px 16px 34px -3px rgb(175 175 175 / 0.5);
+  box-shadow: 0px 16px 34px -3px rgb(175 175 175 / 0.5);
   /* padding: .75rem; */
 }
 
@@ -577,7 +578,7 @@ img {
 }
 
 .own-script {
-  font-family: 'Blackmatte';
+  font-family: 'TheNautiGal';
 
   font-size: 8rem;
   color: var(--palet-1);
@@ -604,7 +605,7 @@ img {
 .about .content .title {
   font-size: 6rem;
   margin-top: -3rem;
-  font-family: 'Bebas-Neue-Pro-Bold';
+  font-family: 'Poppins-Bold';
   text-transform: uppercase;
   color: var(--black);
 }
@@ -640,13 +641,13 @@ img {
 
 .reviews {
   background: var(--palet-2) url(../images/vectores/patron-2.svg) repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   padding: 2rem 9% !important;
 }
 
 .heading .reviews-title {
-  font-family: 'Bebas-Neue-Pro-Bold';
+  font-family: 'Poppins-Bold';
   font-size: 6rem;
   margin-top: -4.5rem;
   padding-left: 6rem;
@@ -654,13 +655,13 @@ img {
 }
 
 .heading .script-review {
-  font-family: 'Blackmatte';
+  font-family: 'TheNautiGal';
   font-size: 10rem;
   color: var(--palet-1);
 }
 
 .heading .contact-title {
-  font-family: 'Bebas-Neue-Pro-Bold';
+  font-family: 'Poppins-Bold';
   font-size: 6rem;
   margin-top: -3.5rem;
   padding-left: 6rem;
@@ -668,7 +669,7 @@ img {
 }
 
 .heading .script-contact {
-  font-family: 'Blackmatte';
+  font-family: 'TheNautiGal';
   font-size: 10rem;
   margin-top: -4rem;
   color: var(--palet-1);
@@ -697,7 +698,7 @@ img {
 .reviews .box-container .box h3 {
   font-size: 3rem;
   text-transform: uppercase;
-  font-family: 'Bebas-Neue-Pro-Bold';
+  font-family: 'Poppins-Bold';
   color: var(--black);
 }
 
@@ -765,7 +766,7 @@ img {
 .contact .row .form .icons-container .icons h3 {
   padding: 1rem 0;
   font-size: 2.5rem;
-  font-family: 'Bebas-Neue-Pro-Bold';
+  font-family: 'Poppins-Bold';
   text-transform: uppercase;
   color: var(--black);
 }
@@ -897,21 +898,21 @@ img {
 }
 
 .domicilio .dom-content .heading .domi-title {
-  font-family: 'Bebas-Neue-Pro-Bold';
+  font-family: 'Poppins-Bold';
   font-size: 4rem;
   padding-left: 6rem;
   color: var(--black);
 }
 
 .domicilio .dom-content .heading .script-domi {
-  font-family: 'Blackmatte';
+  font-family: 'TheNautiGal';
   font-size: 10rem;
   margin-top: -5rem;
   color: var(--palet-1);
 }
 
 .footer {
-  background: url(../images/vectores/mis-1.svg) repeat, rgba(0, 0, 0, 0.959);
+  background: url(../images/vectores/back-footer.svg) no-repeat, rgba(0, 0, 0, 0.959);
   background-size: contain;
   background-position: right;
   padding: 3rem 9% !important;
@@ -927,7 +928,7 @@ img {
 
 .footer .box-container .box h3 {
   font-size: 2rem;
-  font-family: 'Bebas-Neue-Pro-Bold';
+  font-family: 'Poppins-Bold';
   color: var(--white);
   padding: 1rem 0;
 }
@@ -1497,7 +1498,7 @@ input.whats-input[type=text]:focus {
   }
 
   .logo-desing {
-    width: 20%;
+    width: 10%;
   }
 
   .heading .sub-menu {
@@ -1539,11 +1540,11 @@ input.whats-input[type=text]:focus {
   }
 
   .logo-desing {
-    width: 25%;
+    width: 15%;
   }
 
   .heading .title-menu {
-    font-size: 6rem;
+    font-size: 9rem;
     margin-top: -2.5rem;
   }
 
