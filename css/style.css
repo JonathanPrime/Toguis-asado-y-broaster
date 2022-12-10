@@ -552,7 +552,7 @@ img {
 
 .owl-theme .owl-nav [class*=owl-] {
   color: var(--white);
-  background-color: rgba(80, 70, 70, 49%);
+  background-color: rgba(209, 196, 8, 0.49);
   font-size: 30px;
   border-radius: 3px;
 }
@@ -1566,12 +1566,12 @@ input.whats-input[type=text]:focus {
   }
 
   .heading .title-menu {
-    font-size: 9rem;
-    margin-top: -2.5rem;
+    font-size: 10rem;
+    margin-top: -3.5rem;
   }
 
   .heading .sub-menu {
-    font-size: 3.8rem;
+    font-size: 5rem;
   }
 }
 
